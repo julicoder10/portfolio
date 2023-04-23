@@ -31,6 +31,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
     background-color: #05000f;
+    overflow-x: hidden;
 }
 
 /* GLITCH EFFECT*/
@@ -122,7 +123,7 @@ header {
 
 header i {
     color: #00fffc;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 
@@ -142,14 +143,14 @@ header nav {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 5rem;
+    padding-top: 4rem;
     gap:1.5rem;
     position: fixed;
     top:3rem;
     right: -50rem;
     width: 25%;
     height: 100%;
-    background-color:rgba(5, 0, 15,.5);
+    background-color:rgba(5, 0, 15,.7);
 }
 
 header nav .navbar-icons{
@@ -430,7 +431,11 @@ header #navbar .contact-button:hover{
     header #navbar{
         align-items: center;
         justify-content: center;
-        width: 40%;
+        width: 100%;
+    }
+
+    header #navbar a {
+        font-size:1.5rem;
     }
 
     #hero section{
