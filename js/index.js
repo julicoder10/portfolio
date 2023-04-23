@@ -1,4 +1,5 @@
 const sections = document.querySelectorAll('section');
+
 const observer = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -11,3 +12,12 @@ const observer = new IntersectionObserver(function(entries, observer) {
 });
 
 sections.forEach(section => observer.observe(section));
+
+
+const button = document.getElementById('toggle-bar');
+const bar = document.getElementById('navbar');
+
+button.addEventListener('click', function() {
+  bar.classList.toggle('active');
+  button.classList.toggle('active')
+});

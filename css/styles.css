@@ -112,13 +112,23 @@ header {
     padding: .8rem 2.5rem;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
+    background-color: #05000f;
 }
 
+header i {
+    color: #00fffc;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+header i.active{
+    color: #dabe21;
+}
 
 
 header span {
@@ -131,12 +141,33 @@ header span {
 header nav {
     display: flex;
     align-items: center;
-    gap:1rem;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap:1.5rem;
+    position: fixed;
+    top:3rem;
+    right: -50rem;
+    width: 25%;
+    height: 100%;
+    background-color:rgba(5, 0, 15,.5);
+}
+
+header nav .navbar-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+
+header nav.active {
+    right: 0;
 }
 
 #navbar a {
     color:#fff;
-    font-size: .9rem;
+    font-size: 1rem;
     text-transform: capitalize;
     font-weight: 400;
 }
@@ -396,15 +427,7 @@ header #navbar .contact-button:hover{
         overflow-x: hidden!important;
     }
 
-    header{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        gap:1rem;
-    }
-
     header #navbar{
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -493,12 +516,6 @@ header #navbar .contact-button:hover{
     }
 }
 
-@media screen and (max-width:480px){
-    header{
-        display:none;
-    }
-}
-
 #contact {
     min-height: 80vh;
     display: flex;
@@ -573,4 +590,7 @@ footer {
     align-items: center;
     color: #fff;
     font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
 }
