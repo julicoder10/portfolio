@@ -30,7 +30,7 @@ html::-webkit-scrollbar-thumb {
 
 
 body {
-    background-color: #05000f;
+    background-color: #0b0021;
     overflow-x: hidden;
 }
 
@@ -194,10 +194,6 @@ header #navbar .contact-button:hover{
 }
 
 
-
-
-
-
 /*
     HERO SECTION
 */
@@ -292,6 +288,7 @@ header #navbar .contact-button:hover{
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1.5s ease, transform 0.5s ease;
+    background-color: #05000f;
 }
 
 #about.fade-in{
@@ -531,6 +528,7 @@ header #navbar .contact-button:hover{
     text-align: center;
     padding: 2rem;
     gap:1rem;
+    background-color: #05000f;
 }
 
 #contact h3 {
