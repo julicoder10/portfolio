@@ -16,7 +16,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-    width: 1rem;
+    width: .5rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -24,13 +24,14 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: #920075;
+    background: #333;
+    border-radius: .5rem;
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 
 body {
-    background-color: #0b0021;
+    background-color: #fff;
     overflow-x: hidden;
 }
 
@@ -49,8 +50,8 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-      0.025em 0.04em 0 #fffc00;
+    text-shadow: 0.05em 0 0 #000, -0.03em -0.04em 0 #333,
+      0.025em 0.04em 0 #111;
     animation: glitch 725ms infinite;
   }
   
@@ -76,122 +77,34 @@ body {
   
   @keyframes glitch {
     0% {
-      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-        0.025em 0.04em 0 #fffc00;
+      text-shadow: 0.05em 0 0 #333, -0.03em -0.04em 0 #111,
+        0.025em 0.04em 0 #000;
     }
     15% {
-      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
-        0.025em 0.04em 0 #fffc00;
+      text-shadow: 0.05em 0 0 #333, -0.03em -0.04em 0 #111,
+        0.025em 0.04em 0 #000;
     }
     16% {
-      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-        -0.05em -0.05em 0 #fffc00;
+      text-shadow: -0.05em -0.025em 0 #333, 0.025em 0.035em 0 #111,
+        -0.05em -0.05em 0 #000;
     }
     49% {
-      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
-        -0.05em -0.05em 0 #fffc00;
+      text-shadow: -0.05em -0.025em 0 #333, 0.025em 0.035em 0 #111,
+        -0.05em -0.05em 0 #000;
     }
     50% {
-      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-        0 -0.04em 0 #fffc00;
+      text-shadow: 0.05em 0.035em 0 #333, 0.03em 0 0 #111,
+        0 -0.04em 0 #000;
     }
     99% {
-      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
-        0 -0.04em 0 #fffc00;
+      text-shadow: 0.05em 0.035em 0 #333, 0.03em 0 0 #111,
+        0 -0.04em 0 #000;
     }
     100% {
-      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
-        -0.04em -0.025em 0 #fffc00;
+      text-shadow: -0.05em 0 0 #333, -0.025em -0.04em 0 #111,
+        -0.04em -0.025em 0 #000;
     }
   }
-
-
-
-
-header {
-    display: flex;
-    padding: .8rem 2.5rem;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: #05000f;
-}
-
-header i {
-    color: #00fffc;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-
-header i.active{
-    color: #dabe21;
-}
-
-
-header span {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.2rem;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 4rem;
-    gap:1.5rem;
-    position: fixed;
-    top:3rem;
-    right: -50rem;
-    width: 25%;
-    height: 100%;
-    background-color:rgba(5, 0, 15,.7);
-}
-
-header nav .navbar-icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:2rem;
-}
-
-
-
-header nav.active {
-    right: 0;
-}
-
-#navbar a {
-    color:#fff;
-    font-size: 1rem;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-  
-#navbar a.white {
-    color: white;
-}
-
-header nav a:hover{
-    opacity: 80%;
-}
-
-header #navbar .contact-button{
-    padding: .4rem 2rem;
-    background:none;
-    color: #dabe21;
-    border-radius: 3rem;
-    border: 2px solid #dabe21;
-}
-
-header #navbar .contact-button:hover{
-    opacity:70%;
-}
 
 
 /*
@@ -199,9 +112,28 @@ header #navbar .contact-button:hover{
 */
 
 #hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
+    background-image: url(../assets/pexels-neo-2653362-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: .5rem;
+    border-radius: 1rem;
+    position: relative;
     text-align: center;
+}
+
+
+#hero h2 {
+    font-size:.8rem;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#hero h1 {
+    color:#fff;
 }
 
 #hero section {
@@ -209,13 +141,14 @@ header #navbar .contact-button:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     width: 100%;
     height: 100%;
     position: relative;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1.5s ease, transform 0.5s ease;
+    padding-bottom: 2rem;
 }
 
 #hero section.fade-in{
@@ -224,55 +157,80 @@ header #navbar .contact-button:hover{
 }
 
 #hero section span {
-    color: #920075;
-    font-size: 2rem;
+    color: #ddd;
+    font-size: 1.2rem;
     text-transform: capitalize;
 }
 
-
-#hero section h2 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #2de2e6;
-}
-
-#hero .tech-stack-span{
-    color:#fff;
-}
-
-#hero section div {
+#hero .buttons {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#hero .tech-stack-span{
-    font-size:.9rem;
-    border-right: .5rem solid #19c8fdf4;
-    padding-right: .5rem;
-    margin-right: .5rem;
-    text-transform: capitalize;
-}
-
-#hero .tech-stack {
-    height: 5rem;
-    display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
-#hero .tech-stack div {
+#hero .buttons .github-btn {
+    border: 1.5px solid #fff;
+    border-radius: .3rem;
+    color: #fff;
+    padding: .8rem 1.4rem;
+    width:8rem;
+    text-align:center;
+    text-transform: capitalize;
+}
+#hero .buttons .github-btn:hover{
+    opacity: 75%;
+}
+
+#hero .buttons .work-btn{
+    background-color: #ddd;
+    color: #111;
+    border-radius: .3rem;
+    padding: .9rem 1.5rem;
+    width:8rem;
+    text-align:center;
+    text-transform: capitalize;
+}
+#hero .buttons .work-btn:hover{
+    opacity: 75%;
+}
+
+.tech-stack-span{
+    color:#000;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 1rem;
+    height: 7rem;
+    width: 99%;
+    gap:1rem;
+    margin: auto;
+}
+
+.tech-stack-span{
+    font-size:1.2rem;
+    text-transform: uppercase;
+}
+
+
+.tech-stack div {
     padding:0;
-    width: 24rem;
     display: flex;
     align-items: center;
-    gap:1.8rem;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#hero .tech-stack img{
-    width:2rem;
-    height:2rem;
+.tech-stack img{
+    width:3rem;
+    height:3rem;
+    filter: grayscale(100%);
 }
 
 /* ABOUT ME */
@@ -288,7 +246,6 @@ header #navbar .contact-button:hover{
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1.5s ease, transform 0.5s ease;
-    background-color: #05000f;
 }
 
 #about.fade-in{
@@ -299,7 +256,7 @@ header #navbar .contact-button:hover{
 #about span{
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #2de2e6;
+    color: #333;
     text-align: center;
     margin-top: 2rem;
     font-weight: lighter;
@@ -309,18 +266,18 @@ header #navbar .contact-button:hover{
     font-size:2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color:#dabe21;
+    color:#111;
 }
 
 #about p {
-    color:#ddd;
+    color:#333;
     font-size: 1.2rem;
     width:50%;
 }
 
 #about i {
     font-size:2rem;
-    color:#fff;
+    color:#000;
 }
 
 #about i:hover {
@@ -344,7 +301,7 @@ header #navbar .contact-button:hover{
 #work h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #2de2e6;
+    color: #111;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: -2rem;
@@ -353,10 +310,10 @@ header #navbar .contact-button:hover{
 
 #work h2 {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem 0 2rem 0;
     font-size: 2rem;
     text-transform: uppercase;
-    color:#dabe21;
+    color:#000;
 }
 
 #work .box-container{
@@ -365,9 +322,11 @@ header #navbar .contact-button:hover{
 }
 
 #work .box-container .demo {
-    width: 100%;
     display: flex;
     min-height: 80vh;
+    background-color: #111;
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 #work .box-container .demo .info{
@@ -380,9 +339,9 @@ header #navbar .contact-button:hover{
 }
 
 #work .box-container .demo .info span{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #2de2e6;
+    color: #fff;
 }
 
 
@@ -394,15 +353,21 @@ header #navbar .contact-button:hover{
 
 
 #work .box-container .demo .info a{
-    color: #111;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap:.5rem;
-    color: #dabe21;
+    color: #666;
+    padding: 1rem;
+    border: 2px solid #666;
+    border-radius: .5rem;
+    width: 12rem;
+    font-size: 1rem;
 }
 
-#work .box-container .demo .info a:hover i {
-    margin-left:.2rem;
+#work .box-container .demo .info a:hover {
+    color: #fff;
+    border-color: #fff;
 }
 
 #work .box-container .demo .image{
@@ -415,24 +380,15 @@ header #navbar .contact-button:hover{
 }
 
 #work .box-container .demo .image img{
-    width:100%;
-    border: 2px solid #bc13fe;
+    width:95%;
+    border: 2px solid #333;
+    border-radius: 1rem;
 }
 
 @media screen and (max-width: 768px) {
     
     html {
         overflow-x: hidden!important;
-    }
-
-    header #navbar{
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-
-    header #navbar a {
-        font-size:1.5rem;
     }
 
     #hero section{
@@ -528,13 +484,15 @@ header #navbar .contact-button:hover{
     text-align: center;
     padding: 2rem;
     gap:1rem;
-    background-color: #05000f;
+    background-color: #111;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 #contact h3 {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #2de2e6;
+    color: #ddd;
     text-align: center;
     font-weight: lighter;
 }
@@ -548,24 +506,22 @@ header #navbar .contact-button:hover{
 
 #contact input {
     width:100%;
-    background: none;
     outline: none;
-    border: 1.5px solid #2de2e6;
     padding: .7rem;
-    color:#fff;
+    color:#111;
     margin-bottom: 1rem;
     border-radius:.5rem;
+    border: none;
 }
 
 #contact textarea {
     width:100%;
-    background: none;
     outline: none;
-    border: 1.5px solid #2de2e6;
     padding: .7rem;
     color: #fff;
     resize: none;
     border-radius:.5rem;
+    border: none;
 }
 
 #contact button {
@@ -576,25 +532,27 @@ header #navbar .contact-button:hover{
     margin-top:1rem;
     padding: .5rem 2rem;
     background:none;
-    color: #2de2e6;
-    border-radius: 3rem;
-    border: 2px solid #2de2e6;
+    color: #fff;
+    border-radius: .5rem;
+    border: 2px solid #fff;
 }
 
 #contact button:hover {
-    background-color: #2de2e6;
+    background-color: #fff;
     color: #000;
 }
 
 footer {
-    text-align: center;
-    padding:1rem 2rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 1rem;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    background-color: #111;
 }
+
+footer span{
+    color:#fff;
+    font-size:1rem;
+    text-align: center;
+}
+
