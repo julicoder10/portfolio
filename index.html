@@ -13,37 +13,93 @@
 </head>
 
 <body>
-    
-    
+
+    <header>
+        <span>Julian Aquino</span>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <section id="hero">
         <section class="left">
-                <h2>FRONTEND DEVELOPER  |  SALESFORCE DEVELOPER  |  RANGER TRAILHEAD</h2>
-                <h1 class="glitch">
-                  Julian Aquino
-                </h1>
-                <div class="buttons">
-                    <a href="#" class="github-btn">github</a>
-                    <a href="#" class="work-btn">work</a>
-                </div>
-            </section>
+            <span>Welcome to my portfolio</span>
+            <div class="hero-container">
+                <div class="environment"></div>
+                <h1 class="hero glitch layers" data-text="Julian Aquino"><span>frontend developer</span></h1>
+              </div>
+            <div class="buttons">
+                <a href="https://github.com/julicoder10" target="_blank" class="github-btn">github</a>
+                <a href="#contact" class="work-btn">contact</a>
+            </div>
+        </section>
     </section>
     <div class="tech-stack">
         <div>
-            <img src="assets/html.svg" alt="html icon">
-            <img src="assets/css.svg" alt="html icon">
-            <img src="assets/javascript.svg" alt="html icon">
-            <img src="assets/sass.svg" alt="html icon">
-            <img src="assets/bootstrap.svg" alt="html icon">
-            <img src="assets/tailwind.svg" alt="html icon">
-            <img src="assets/angular.svg" alt="angular icon">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3"></i>
+            <i class="fab fa-js"></i>
+            <img src="assets/sass.svg" alt="sass icon">
+            <img src="assets/bootstrap.svg" alt="bootstrap icon">
+            <img src="assets/tailwind.svg" alt="tailwind icon">
+            <i class="fa-brands fa-angular"></i>
         </div>
     </div>
+
     
+    <section id="skills">
+        <span>Bringing Your Vision to Life</span>
+        <div class="box-container">
+            <div class="skill-box">
+                <h2 class="hero glitch layers"><i class="fa-solid fa-pen"></i></h2>
+                
+                <h3>UX & UI</h3>
+                <p>
+                    I create visually appealing and user-friendly interfaces. My focus is on creating designs that are centered on the user experience.
+                </p>
+            </div>
+    
+            <div class="skill-box">
+                <h2 class="hero glitch layers"><i class="fa-solid fa-mobile-screen-button"></i></h2>
+                
+                <h3>Web development</h3>
+                <p>
+                    I am dedicated to creating responsive and functional websites. My focus is on creating websites that are easy to use and visually appealing.    
+                </p>
+            </div>
+    
+            <div class="skill-box">
+                <h2 class="hero glitch layers"><i class="fa-sharp fa-solid fa-display"></i></h2>
+                
+                <h3>design</h3>
+                <p>
+                    I create visually striking designs that are accessible and easy to understand. My focus is on creating effective designs that fulfill the client's needs.
+                </p>
+            </div>
+    
+            <div class="skill-box">
+                <h2 class="hero glitch layers"><i class="fa-solid fa-bolt"></i></h2>
+                
+                <h3>development</h3>
+                <p>
+                    I always try to write clean and efficient code. My focus is on providing effective solutions for my clients, using my skills and knowledge to create code that is easy to maintain.
+                </p>
+            </div>
+        </div>
+        
+    </section>
+
+
     <section id="about">
-        <span>about me</span>
-            <h2>
-              Julian Aquino
-            </h2>
+        <h3>about me</h3>
+        <div class="hero-container">
+            <div class="environment"></div>
+            <h2 class="hero glitch layers" data-text="Julian Aquino"><span>julian aquino</span></h2>
+        </div>
         <p>
             I am Julian, I am 19 years old and I have been passionate about programming for four years. 
             Throughout this time, I have honed my skills and kept up-to-date with the latest trends and developments 
@@ -53,8 +109,6 @@
         </p>
         <a href="https://github.com/julicoder10" target="_blank"><i class="fa-brands fa-github"></i></a>
     </section>
-
- 
 
     <section id="work">
         <h3>works</h3>
@@ -138,12 +192,15 @@
     </section>
 
     <section id="contact">
-        <h3>contact</h3>
+        <h3>get in touch</h3>
+        <span id="numero">+54 9 11-6284-5211 - click to copy</span>
         <div class="container">
             <h2 class="glitch">
               contact me
             </h2>
           </div>
+
+        
         <form action="https://formsubmit.co/juliandesarrolloweb@gmail.com" method="POST">
             <div>
               <input type="text" id="name" name="name" placeholder="Enter your name" required>
