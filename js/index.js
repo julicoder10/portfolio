@@ -40,3 +40,24 @@ function showMotivationalPhrase() {
 showMotivationalPhrase();
 
 
+// Obtener referencias a los elementos
+const themeButtons = document.getElementsByClassName('theme-button');
+const htmlCssDemos = document.getElementById('html-css-demos');
+const angularDemos = document.getElementById('angular-demos');
+const reactDemos = document.getElementById('react-demos');
+const bootstrapDemos = document.getElementById('bootstrap-demos');
+
+// Agregar evento de clic a cada botón
+Array.from(themeButtons).forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Ocultar todos los contenedores de demos
+    htmlCssDemos.style.display = 'none';
+    angularDemos.style.display = 'none';
+    reactDemos.style.display = 'none';
+    bootstrapDemos.style.display = 'none';
+
+    // Mostrar el contenedor correspondiente al tema seleccionado
+    const selectedTheme = button.getAttribute('data-theme');
+    document.getElementById(selectedTheme + '-demos').style.display = 'block';
+  });
+});

@@ -530,7 +530,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: #000;
+  background-color: #070707;
   overflow: hidden;
 }
 
@@ -557,13 +557,22 @@ header{
   right: 0;
   left: 0;
   z-index: 1000;
-  background-color: #000;
+  background-color: #070707;
 }
 
 header span {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#gear {
+  animation: spin 2s infinite linear;
 }
 
 header nav {
@@ -578,7 +587,7 @@ header nav a {
 
 header nav a:last-child{
   color:#1bc7fb;
-  border-radius: 3rem;
+  border-radius: .3rem;
   border: 1px solid #1bc7fb;
   padding: .5rem 2rem;
   text-transform: capitalize;
@@ -649,7 +658,7 @@ header nav a:last-child{
 }
 
 #hero .buttons .work-btn {
-  background-color: #6C00FF;
+  background-color: #111;
   color: #fff;
   border-radius: 0.3rem;
   padding: 0.9rem 1.5rem;
@@ -673,6 +682,7 @@ header nav a:last-child{
   align-items: center;
   gap: 1.5rem;
   margin-top:1rem;
+  background-color: #111;
 }
 
 #about .about-box-left {
@@ -820,6 +830,29 @@ header nav a:last-child{
 #work h2 {
   color: #fff;
   font-size: 2.5rem;
+}
+
+#work #themeButtons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#work #themeButtons .theme-button {
+  color:#1bc7fb;
+  border-radius: .3rem;
+  border: 1px solid #1bc7fb;
+  padding: .5rem 2rem;
+  text-transform: capitalize;
+  background:none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#work #themeButtons .theme-button:hover {
+  background-color: #1bc7fb;
+  color: #000;
 }
 
 #work .box-container {

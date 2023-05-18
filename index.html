@@ -1,184 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/29c7ffeb19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/29c7ffeb19.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Portfolio | JULIAN AQUINO</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <span>página en proceso...</span>
-        <nav>
-            <a href="#hero">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Get in touch</a>
-        </nav>
+      <span>página en proceso... <i class="fa-solid fa-gear" id="gear"></i></span>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Get in touch</a>
+      </nav>
     </header>
-    
+
     <section id="hero">
-        <section>
-            <span>Welcome to my portfolio</span>
-            <div class="hero-container">
-                <div class="environment"></div>
-                <h1 class="hero glitch layers" data-text="Julian Aquino"><span>web developer</span></h1>
-            </div>
-            <p id="motivational-phrase"></p>
-            <div class="buttons">
-                <a href="https://github.com/julicoder10" target="_blank" class="github-btn">github</a>
-                <a href="#contact" class="work-btn">contact</a>
-            </div>
-        </section>
+      <section>
+        <span>Welcome to my portfolio</span>
+        <div class="hero-container">
+          <div class="environment"></div>
+          <h1 class="hero glitch layers" data-text="Julian Aquino">
+            <span>web developer</span>
+          </h1>
+        </div>
+        <p id="motivational-phrase"></p>
+        <div class="buttons">
+          <a
+            href="https://github.com/julicoder10"
+            target="_blank"
+            class="github-btn"
+            >github</a
+          >
+          <a href="#contact" class="work-btn">contact</a>
+        </div>
+      </section>
     </section>
 
     <section id="skills">
-        <div class="right">
-            <div class="skill-box">
-                
-                <h3>UX & UI</h3>
-                <p>
-                    I create visually appealing and user-friendly interfaces. My focus is on creating designs that are centered on the user experience.
-                </p>
-            </div>
-
-            <div class="skill-box">
-                
-                <h3>Web development</h3>
-                <p>
-                    I am dedicated to creating responsive and functional websites. My focus is on creating websites that are easy to use and visually appealing.    
-                </p>
-            </div>
-
-            <div class="skill-box">
-                
-                <h3>design</h3>
-                <p>
-                    I create visually striking designs that are accessible and easy to understand. My focus is on creating effective designs that fulfill the client's needs.
-                </p>
-            </div>
-
-            <div class="skill-box">
-                
-                <h3>development</h3>
-                <p>
-                    I always try to write clean and efficient code, providing effective solutions for my clients, using my skills and knowledge to create code that is easy to maintain.
-                </p>
-            </div>
+      <div class="right">
+        <div class="skill-box">
+            <i class="fa-solid fa-pen"></i>
+          <h3>UX & UI</h3>
+          <p>
+            I create visually appealing and user-friendly interfaces. My focus
+            is on creating designs that are centered on the user experience.
+          </p>
         </div>
-        
+
+        <div class="skill-box">
+            <i class="fa-solid fa-code"></i>
+          <h3>Web development</h3>
+          <p>
+            I am dedicated to creating responsive and functional websites. My
+            focus is on creating websites that are easy to use and visually
+            appealing.
+          </p>
+        </div>
+
+        <div class="skill-box">
+            <i class="fa-solid fa-mobile-screen"></i>
+          <h3>design</h3>
+          <p>
+            I create visually striking designs that are accessible and easy to
+            understand. My focus is on creating effective designs that fulfill
+            the client's needs.
+          </p>
+        </div>
+
+        <div class="skill-box">
+            <i class="fa-solid fa-terminal"></i>
+          <h3>development</h3>
+          <p>
+            I always try to write clean and efficient code, providing effective
+            solutions for my clients, using my skills and knowledge to create
+            code that is easy to maintain.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section id="work">
+      <span>My portfolio</span>
 
-        <span>My portfolio</span>
+      <h2>My recently works</h2>
 
-        <h2>My recently works</h2>
+      <div id="themeButtons">
+        <button class="theme-button" data-theme="html-css">HTML/CSS</button>
+        <button class="theme-button" data-theme="angular">Angular</button>
+        <button class="theme-button" data-theme="react">React</button>
+        <button class="theme-button" data-theme="bootstrap">Bootstrap</button>
+      </div>
 
+      <div id="html-css-demos">
+        <!-- Aquí van los demos de HTML/CSS -->
         <div class="box-container">
             <div class="demo">
-                <img src="assets/demo1.png" alt="">
-                <p>
-                    In this website demo, we present a hamburger page that displays a selection of delicious burgers and their prices. 
-                    The website features an attractive and user-friendly design, with clear navigation and appealing visuals that showcase 
-                    the products in all their glory.
-                </p>
-                <a href="#">view</a>
+              <img src="assets/html-css-coffee.png" alt="" />
+              <p>
+                In this website demo, we present a hamburger page that displays a
+                selection of delicious burgers and their prices. The website
+                features an attractive and user-friendly design, with clear
+                navigation and appealing visuals that showcase the products in all
+                their glory.
+              </p>
+              <a href="#">view</a>
             </div>
+    
+            <div class="demo">
+              <img src="assets/demo1.png" alt="" />
+              <p>
+                In this website demo, I present a restaurant website that showcases
+                the restaurant's atmosphere, location, and services. The website
+                features an elegant and engaging design, with high-quality visuals
+                that convey the restaurant's ambiance and style.
+              </p>
+              <a href="#">view</a>
+            </div>
+    
+            <div class="demo">
+              <img src="assets/demo3.png" alt="" />
+              <p>
+                In this website demo, I present a food website that displays a
+                selection of food items and prices. The website features a stylish
+                and user-friendly design, with clear navigation and appealing
+                visuals that showcase the products.
+              </p>
+              <a href="#">view</a>
+            </div>
+    
+            <div class="demo">
+              <img src="assets/demo4.png" alt="" />
+              <p>
+                In this website demo, I present a page that includes detailed
+                information about each shoe, and pricing and condition details.
+                Users can also find information about the company, read reviews and
+                testimonials.
+              </p>
+              <a href="#">view</a>
+            </div>
+    
+            <div class="demo">
+              <img src="assets/clone1.png" alt="" />
+              <p>
+                In this website demo, I present a clone of Tesla's website,
+                showcasing their latest electric vehicles and sustainable energy
+                products. The website features a sleek and modern design, with an
+                intuitive layout that highlights the key features and benefits of
+                each product.
+              </p>
+              <a href="#">view</a>
+            </div>
+          </div>
+      </div>
+      
+      <div id="angular-demos">
+        <!-- Aquí van los demos de Angular -->
+        <div class="box-container">
 
             <div class="demo">
-                <img src="assets/demo2.png" alt="">
-                <p>
-                    In this website demo, I present a restaurant website that showcases the restaurant's atmosphere, location, and services. 
-                    The website features an elegant and engaging design, with high-quality visuals that convey the restaurant's ambiance and style.
-                </p>
-                <a href="#">view</a>
+              <img src="assets/angular-wikiAPI.png" alt="" />
+              <p>
+                In this website demo, I present a food website that displays a
+                selection of food items and prices. The website features a stylish
+                and user-friendly design, with clear navigation and appealing
+                visuals that showcase the products.
+              </p>
+              <a href="#">view</a>
             </div>
-
+    
             <div class="demo">
-                <img src="assets/demo3.png" alt="">
-                <p>
-                    In this website demo, I present a food website that displays a selection of food items and prices. 
-                    The website features a stylish and user-friendly design, with clear navigation and appealing visuals that 
-                    showcase the products.
-                </p>
-                <a href="#">view</a>
+              <img src="assets/angular-criptoAPI.png" alt="" />
+              <p>
+                In this website demo, I present a page that includes detailed
+                information about each shoe, and pricing and condition details.
+                Users can also find information about the company, read reviews and
+                testimonials.
+              </p>
+              <a href="#">view</a>
             </div>
-
+          </div>
+      </div>
+      
+      <div id="react-demos">
+        <!-- Aquí van los demos de React -->
+        <div class="box-container">
             <div class="demo">
-                <img src="assets/demo4.png" alt="">
-                <p>
-                    In this website demo, I present a page that includes detailed 
-                    information about each shoe, and pricing and condition details. Users can also find 
-                    information about the company, read reviews and testimonials.
-                </p>
-                <a href="#">view</a>
+              <img src="assets/react-citas.png" alt="" />
+              <p>
+                In this website demo, we present a hamburger page that displays a
+                selection of delicious burgers and their prices. The website
+                features an attractive and user-friendly design, with clear
+                navigation and appealing visuals that showcase the products in all
+                their glory.
+              </p>
+              <a href="#">view</a>
             </div>
-
+    
             <div class="demo">
-                <img src="assets/clone1.png" alt="">
-                <p>
-                    In this website demo, I present a clone of Tesla's website, showcasing their latest electric vehicles and sustainable 
-                    energy products. The website features a sleek and modern design, with an intuitive layout that highlights the key features 
-                    and benefits of each product.
-                </p>
-                <a href="#">view</a>
+              <img src="assets/react-nft.png" alt="" />
+              <p>
+                In this website demo, I present a restaurant website that showcases
+                the restaurant's atmosphere, location, and services. The website
+                features an elegant and engaging design, with high-quality visuals
+                that convey the restaurant's ambiance and style.
+              </p>
+              <a href="#">view</a>
             </div>
-            
-        </div>
+    
+          </div>
+      </div>
+      
+      <div id="bootstrap-demos">
+        <!-- Aquí van los demos de Bootstrap -->
+        d
+      </div>
     </section>
+
     
-    
+
     <section id="about">
-        <div class="about-box-left">
-            <span>about me</span>
-            <div class="hero-container">
-                <div class="environment"></div>
-                <h2 class="hero glitch layers" data-text="Julian Aquino"><span>julian aquino</span></h2>
-            </div>
-            <p>
-                I am Julian, I am 19 years old and I have been passionate about programming for four years. 
-                Throughout this time, I have honed my skills and kept up-to-date with the latest trends and developments 
-                in the programming world. I consider myself a resilient person, capable of adapting to new situations easily 
-                and finding creative solutions to problems. Additionally, I enjoy working in a team and believe that collaboration 
-                and communication are essential for achieving successful projects.   
-            </p>
-            <a href="https://github.com/julicoder10" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <div class="about-box-left">
+        <span>about me</span>
+        <div class="hero-container">
+          <div class="environment"></div>
+          <h2 class="hero glitch layers" data-text="Julian Aquino">
+            <span>julian aquino</span>
+          </h2>
         </div>
-    </section> 
+        <p>
+          I am Julian, I am 19 years old and I have been passionate about
+          programming for four years. Throughout this time, I have honed my
+          skills and kept up-to-date with the latest trends and developments in
+          the programming world. I consider myself a resilient person, capable
+          of adapting to new situations easily and finding creative solutions to
+          problems. Additionally, I enjoy working in a team and believe that
+          collaboration and communication are essential for achieving successful
+          projects.
+        </p>
+        <a href="https://github.com/julicoder10" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </section>
 
     <section id="contact">
-        
-        <h2>get in touch</h2>
-        
-        <form action="https://formsubmit.co/juliandesarrolloweb@gmail.com" method="POST">
-            <div>
-              <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
-            <div>
-              <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div>
-              <textarea cols="40" rows="10" id="message" name="message" placeholder="Enter your message." required></textarea>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
+      <h2>get in touch</h2>
+
+      <form
+        action="https://formsubmit.co/juliandesarrolloweb@gmail.com"
+        method="POST"
+      >
+        <div>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div>
+          <textarea
+            cols="40"
+            rows="10"
+            id="message"
+            name="message"
+            placeholder="Enter your message."
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
     <footer>
-        <span>Portfolio by Julian Aquino</span>
+      <span>Portfolio by Julian Aquino</span>
     </footer>
 
-
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>
